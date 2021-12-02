@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contato.css">
+    <title>Contato</title>
+</head>
+<body>
+   
+    <header>
+        <img src="img/logo.png" alt="logo da barbearia alura">
+            <nav class="navegar"> 
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html"> Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav> 
+      
+    </header>    
+    
+    <main>
+        <!--Estrutura basica para um formulário. form,label, input e sumnit-->
+        <form>
+            <label for="nomesobrenome" >Nome e sobrenome*<input required type="text" id="nomesobrenome" class="input-pradrao" placeholder="Fulano da Silva Melo"> </label>
+            <label for="email">Email*: <input type="email" id="email" class="input-pradrao" required placeholder="exemplo@email.com"> </label>
+            <label for="tel">Telefone*: <input type="tel" id="tel" class="input-pradrao" required placeholder=" (xx) x xxxx-xxxx"> </label>
+
+            <label for="areatxt"> Deixe a sua mensagem*</label>
+            <textarea id="areatxt" cols="69" rows="10" class="input-pradrao" required>Digite aqui... </textarea>
+
+            <fieldset>
+                <legend>Como prefere o nosso contato?</legend>
+                <label for="e-mail"><input type="radio" value="e-mail" id="e-mail" name="preferencia"> Email </label>
+                <label for="telefone"> <input type="radio" value="telefone" id="telefone" name="preferencia"> Telefone </label>
+                <label for="whats"> <input checked type="radio" value="whats" id="whats" name="preferencia"> WhatsApp </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Qual horario prefere ser atendido?</legend>
+                <select>
+                    <option value="Manhã">Manhã</option>
+                    <option value="Tarde">Tarde</option>
+                    <option value="Noite">Noite</option> 
+                </select>
+            </fieldset>
+            
+
+            <label class="checkbox"> <input checked type="checkbox"> Gostaria de receber nossas novidades por email? </label>
+            <input  id="enviar" class ="enviar" type="submit" value="Enviar Formulário">
+        </form>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h ás 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h ás 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>8h ás 20h</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+        
+
+
+
+
+</body>
+<footer>
+    <img src="img/logo-branco.png" alt="logo barbearia alura">
+    <p>&copy; Ingrid Lindor - 2021</p>
+</footer>
+</html>
